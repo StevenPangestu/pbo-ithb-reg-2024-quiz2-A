@@ -23,7 +23,7 @@ public class inputTransaction {
             PreparedStatement stmt = conn.con.prepareStatement(query);
 
             stmt.setInt(1, id);
-            stmt.setInt(2, book.getId());
+            stmt.setInt(2, book);
 
             stmt.executeUpdate();
             return true;
